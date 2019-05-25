@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("a").on('click', function(event) {
+    $(".press").on('click', function(event) {
       if (this.hash !== "") {
         // Prevent default anchor click behavior
         event.preventDefault();
@@ -14,3 +14,7 @@ $(document).ready(function(){
       } 
     });
   });
+
+
+
+ 
