@@ -17,6 +17,10 @@ body, html, .main {
       min-height: 300px;
   }
 
-  .fas {
-      color: #c2c2c2;
+  .color {
+    color: #000000;
+  }
+
+  .color:hover { 
+    color: #c2c2c2;
   }
