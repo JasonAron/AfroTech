@@ -138,11 +138,25 @@ section {
 /*  */
 /* Footer */
 /*  */
-.footer {
+/* .footer {
   position: relative;
   left: 0;
   bottom: 0;
   height: 100px;
   width: 100%;
   background-color: rgb(0, 0, 0);
+} */
+
+
+/**
+ * Footer Styles
+ */
+
+.footer {
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  width: 100%;
+  display: inline-block;
+  background-color: #000000;
 }
