@@ -128,6 +128,14 @@ section {
 }
 
 /*  */
+/* Section 4 */
+/*  */
+
+.jumbotron {
+  background-color:#d8d8d8 !important; 
+}
+
+/*  */
 /* Footer */
 /*  */
 .footer {
