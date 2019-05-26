@@ -1,4 +1,56 @@
 
+/*  */
+/* Nav Stroke */
+/*  */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+.navunderline {
+  border-bottom: 1px solid rgb(0, 0, 0);
+
+}
+
+/*  */
 /* Section 1 */
 /*  */
 body,
@@ -31,60 +83,44 @@ section {
 }
 
 /*  */
-/* Section 3 Galerry */
+/* Section 3 Gallery */
 /*  */
-.gallery-title
-{
-    font-size: 36px;
-    color: #42B32F;
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 70px;
-}
-.gallery-title:after {
-    content: "";
-    position: absolute;
-    width: 7.5%;
-    left: 46.5%;
-    height: 45px;
-    border-bottom: 1px solid #5e5e5e;
-}
-.filter-button
-{
-    font-size: 18px;
-    border: 1px solid #42B32F;
-    border-radius: 5px;
-    text-align: center;
-    color: #42B32F;
-    margin-bottom: 30px;
+.overlayBottom {
+  width: 100%;
+  height:0;
+  bottom:0;
+  background: #838383b8;
 
 }
-.filter-button:hover
-{
-    font-size: 18px;
-    border: 1px solid #42B32F;
-    border-radius: 5px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #42B32F;
-
-}
-.btn-default:active .filter-button:active
-{
-    background-color: #42B32F;
-    color: white;
+.action:hover .overlayTop, .action:hover .overlayBottom {
+  height:25%;
 }
 
-.port-image
-{
-    width: 100%;
+.action{
+  position:relative;
 }
 
-.gallery_product
-{
-    margin-bottom: 30px;
+.overlay {
+  position:absolute;
+  transition:all .3s ease;
+  opacity:0;
+  transition:0.9s;
+  background: #838383b8;
+
+}
+.action:hover .overlay {
+  opacity:1;
 }
 
+.text {
+  color:white;
+  font-family: sans-serif;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size: 20px;
+}
 
 /*  */
 /* Footer */
