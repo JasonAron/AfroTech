@@ -3,7 +3,7 @@
 
 Low Fidelity Website Mock Up
 
-Click [here](https://jasonaron.github.io/AfroTech/) to see the live game.
+Click [here](https://jasonaron.github.io/AfroTech/) to see the Webste Mockup.
 
 
 <h2>Developement</h2>
