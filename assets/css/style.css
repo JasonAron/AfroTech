@@ -147,16 +147,17 @@ section {
   background-color: rgb(0, 0, 0);
 } */
 
-
-/**
- * Footer Styles
- */
-
 .footer {
-  position: fixed;
+  position: relative;
   top: auto;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   display: inline-block;
   background-color: #000000;
 }
+
+
+
+
+
+
